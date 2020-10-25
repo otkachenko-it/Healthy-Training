@@ -1,0 +1,306 @@
+﻿
+
+@charset "utf-8";
+* { 
+	margin: 0;
+	padding: 0;
+	outline: none;
+
+ }
+
+ html {height: 100%}
+ body{ 
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: #fff;
+ 	color: #333;
+ 	font-family: "Segoe UI", Arial, sans-serif;
+ 	font-size: 0.5em;
+ 	line-height: 135%;
+ 	float: left;
+
+
+
+  }
+
+ img { 
+ 	max-width: 100%;
+ 	height: auto;
+ 	width: auto\9; /*для интернерт эксплоера*/
+  }
+
+ a { 
+  	color: #d38484;
+  	text-decoration: none;
+  	-webkit-transition: all.6s ease;
+  	-moz-transition: all.6s ease;
+  	-o-transition: all.6s ease;
+  	-ms-transition: all.6s ease;
+  	transition: all.6s ease;
+   }
+
+
+a:hover { 
+   	color: #efdea0; 
+    }
+
+.clear { 
+	clear: both;
+ }
+
+/* Стили для шапки*/
+
+header{ 
+
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-bottom: 1px solid silver;
+	margin-bottom: 20px;
+ }
+
+header #logo { 
+ 	width: 40%;
+ 	float: left;
+ 
+  }
+
+header #logo a {
+ 	color: #D48231;
+ 	font-size: 2em;
+ 	font-family: Times New Roman, sans-serif;
+  }
+
+header #logo span { 
+ 	color: #512C11;
+  }
+
+header #menuHead{ 
+	width: 34%;
+	float: left;
+ }
+
+header #menuHead div { 
+ 	float: left;
+ 	padding: 5px;
+ 	background-color: #A2A2A2;
+ 	border-radius: 10px;
+ 	color: #FEFCFC;
+
+  }
+
+header #menuHead div:hover { 
+ 	background-color: #D6D5D5;
+
+  }
+
+header #regAuth{ 
+	width: 20%;
+	float: left;
+	text-align: right;
+	font-size: 1.2em;
+ }
+
+
+ /* Стили для футера */
+
+footer { 
+ 	width: 98%;
+ 	float: left;
+ 	padding: 1%;
+ 	background-color: #BEBEBE;
+ 	border-top: 2px solid silver;
+ 	margin-top: 10px;
+  }
+
+footer #social { 
+  	float: left;
+  	width: 50%; 
+   }
+
+footer #social img {
+  	width: 10px;
+  	height: 10px;
+  	float: left;
+  	margin-right: 2px;
+
+   }
+
+footer #rights { 
+  	float: right;
+  	width: 50%;
+  	text-align: right;
+  	font-size: 1.1em;
+   }
+
+   /*Стили для колонок*/
+
+#wrapper {
+   	width: 80%;
+   	margin-left: 10%;
+   	float: left;
+    }
+
+
+
+
+
+/*Стили для левой*/
+
+@media (min-width: 800px) {
+
+#wrapper #leftCol {
+   	width: 70%;
+   	margin-right: 10%;
+   	float: left;
+    }}
+
+@media (max-width: 799px) {
+#wrapper #leftCol {
+    width: 90%;
+    margin-right: 5%;
+    float: left;
+    }}
+
+#wrapper #leftCol #bigArticle, #wrapper #leftCol .article { 
+	width: 78%;
+	margin-left: 10%;
+	background-color: #CECDCD;
+	border-radius: 10px;
+	padding: 1%;
+	float: left;
+
+ }
+
+ #wrapper #leftCol #bigArticle img, #wrapper #leftCol .article img { 
+ 	width: 50px;
+  	height: 50px;
+ 	float: left;
+ 	margin-bottom: 5px;
+ 	margin-right: 5px;
+
+  }
+ #wrapper #leftCol #bigArticle h1, #wrapper #leftCol .article h1 { 
+ 	margin-bottom: 5px;
+ 	font-weight: bold;
+ 	font-size: 1.7em;
+ 	color: #8F5B23;
+ 	font-family: Times New Roman, sans-serif;
+  }
+
+ #wrapper #leftCol #bigArticle p, #wrapper #leftCol .article p { 
+ 	width: 90%;
+  }
+
+#wrapper #leftCol #bigArticle div, #wrapper #leftCol .article div { 
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #643C19;
+	color: #E3E3E3;
+	width: 10%;
+	text-align: center;
+	margin-top: 5px;
+ }
+
+ #wrapper #leftCol #bigArticle div:hover, #wrapper #leftCol .article div:hover { 
+ 	background-color: #A76124;
+
+  }
+
+/*О нас*/
+
+#wrapper #leftCol #about_us {
+
+  width: 76%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 1px solid silver;
+  background-color: #C7C7C7;
+  padding: 2%;
+}
+
+#wrapper #leftCol #about_us h2 {
+  margin-bottom: 3px;
+}
+
+/*Обратаня связь*/
+
+#wrapper #leftCol input{
+  width: 50%; height: 10px;
+  margin-left: 30%;
+  float: left;
+  border-radius: 6px;
+  border: 1px solid silver;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+#wrapper #leftCol input#done{
+  width: 40%;
+  height: 20px;
+  text-align: center;
+}
+
+#wrapper #leftCol input:focus {
+  border: 0.5px solid #626262;
+}
+
+#wrapper #leftCol input:hover{
+  border: 0.5px solid #626262;
+  cursor: pointer;
+} 
+
+#wrapper #leftCol textarea:hover{
+  border: 0.5px solid #626262;
+  cursor: pointer;
+} 
+
+#wrapper #leftCol textarea {
+  width: 50%;
+  height: 100px;
+  margin-left: 30%;
+  float: left;
+  border-radius: 6px;
+  border: 1px solid silver;
+  font-size: 1.2em;
+  padding: 5px;
+  resize: none;
+  font-family: Arial;
+  font-size: 1em;
+}
+
+#wrapper #leftCol #messageShow {
+  font-size: 1em;
+  float: left;
+  color: #FF0000;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*Стили для правой*/    
+
+@media (min-width: 800px) {
+
+#wrapper #rightCol {
+   	width: 20%;
+   	float: left;
+    }}
+
+@media (max-width: 799px) {
+#wrapper #rightCol {
+    width: 80%;
+    margin-left: 5%;
+    float: left;
+    }}
+
+#wrapper #rightCol .banner1 { 
+	width: 100%;
+	float: left;
+	margin-bottom: 20px;
+ }
+ 
+
+
+
